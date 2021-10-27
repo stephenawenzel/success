@@ -1,0 +1,50 @@
+/* All your custom styles go here. You can override the default Bootstrap styles or add your own custom styles for elements, classes, or IDs.  */
+
+body {
+    background-color: black;
+    cursor:default;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+a:hover, a:visited, a:active {
+    color: #90DEF0;
+    text-decoration: none;
+}
+
+#title {
+    color: #90DEF0;
+    width: 100% !important;
+}
+
+h2 {
+    color: #90DEF0;
+    background-color: green;
+}
+
+ul li {
+    background-color: #021317;
+    color: #90DEF0;
+    font-weight:bold;
+    list-style: none;
+}
+
+p {
+    color: #315057;
+}
+
+@media only screen and (min-width: 996px) {
+
+    body {
+        width: 50%;
+    }
+
+    html {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+    }
+}
