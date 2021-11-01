@@ -1,7 +1,7 @@
 /* All your custom styles go here. You can override the default Bootstrap styles or add your own custom styles for elements, classes, or IDs.  */
 
 body {
-    background-color: black;
+    background-color: #4B9CD3;
     cursor:default;
 }
 
@@ -9,23 +9,37 @@ li:hover {
     cursor: pointer;
 }
 
-a:hover, a:visited, a:active {
-    color: #90DEF0;
+a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:active {
+    color: #FFFFFF;
     text-decoration: none;
 }
 
 #title {
-    color: #90DEF0;
-    width: 100% !important;
+    color: #FFFFFF;
 }
 
 h2 {
-    color: #90DEF0;
+    color: #FFFFFF;
 }
 
 ul li {
-    background-color: #021317;
-    color: #90DEF0;
+    background-color: #13294B;
+    color: #FFFFFF;
     font-weight:bold;
     list-style: none;
 }
@@ -35,15 +49,27 @@ p {
 }
 
 @media only screen and (min-width: 996px) {
-
-    body {
-        width: 50%;
-    }
-
-    html {
+    main article {
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
+        justify-content: space-around;
         align-content: center;
     }
+}
+
+html::-webkit-scrollbar {
+    width: auto;
+    background: white;
+}
+
+html::-webkit-scrollbar-button {
+    display: none;
+}
+
+html::-webkit-scrollbar-thumb {
+    background:#ffffff;
+}
+
+html::-webkit-scrollbar-track {
+    background: #4B9CD3;
 }
