@@ -1,8 +1,48 @@
 /* All your custom styles go here. You can override the default Bootstrap styles or add your own custom styles for elements, classes, or IDs.  */
 
 body {
-    background-color: #4B9CD3;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     cursor:default;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsla(100, 10%, 17%, 0.2);
+    background-blend-mode:screen;
+    -webkit-user-select: none; /* Webkit */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10 */
+    /* Currently not supported in Opera but will be soon */
+    -o-user-select: none;
+    user-select: none;
+    font-family: 'Sora', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#title_cont {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+    #title_cont div {
+        background-color: #2A3027;
+        color: #D0DACC;
+        border-radius: 0.5em;
+    }
+
+h2 {
+    font-size: 2em;
+    font-weight:bold;
 }
 
 li:hover {
@@ -10,42 +50,65 @@ li:hover {
 }
 
 a:link {
-    color: #FFFFFF;
+    color: #D0DACC;
     text-decoration: none;
 }
 
 a:visited {
-    color: #FFFFFF;
+    color: #D0DACC;
     text-decoration: none;
 }
 
 a:hover {
-    color: #FFFFFF;
-    text-decoration: none;
+    background-color: #2A3027;
+    color: #E8B130;
+    cursor: pointer;
 }
 
 a:active {
-    color: #FFFFFF;
+    color: #D0DACC;
     text-decoration: none;
 }
 
-#title {
-    color: #FFFFFF;
+section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
-h2 {
-    color: #FFFFFF;
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    align-items: space-around;
+    background-color: hsla(103, 16%, 83%, 0.4);
+    border-radius: 0.5em;
 }
 
 ul li {
-    background-color: #13294B;
-    color: #FFFFFF;
+    background-color: #2A3027;
+    color: #D0DACC;
+    font-size: 0.9em;
     font-weight:bold;
     list-style: none;
+    border-radius: 0.5em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
 }
 
-p {
-    color: #315057;
+#bird_cage {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    min-height: 20vh;
+}
+
+#bird_cage img {
+    width: 100%;
+    height: auto;
 }
 
 @media only screen and (min-width: 996px) {
@@ -71,5 +134,5 @@ html::-webkit-scrollbar-thumb {
 }
 
 html::-webkit-scrollbar-track {
-    background: #4B9CD3;
+    background: #2A3027;
 }
