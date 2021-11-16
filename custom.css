@@ -11,7 +11,7 @@ body {
     background-size: cover;
     background-color: hsla(100, 10%, 17%, 0.2);
     background-blend-mode:screen;
-    -webkit-user-select: none; /* Webkit */
+    -webkit-user-select: none; /* Webkit */ 
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE 10 */
     /* Currently not supported in Opera but will be soon */
@@ -76,6 +76,24 @@ section {
     justify-content: center;
 }
 
+#tips article {
+    color: #D0DACC;
+    font-weight: bold;
+    border-radius: 0.5em;
+}
+
+#tips article h3 {
+    background-color: #2A3027;
+    border-radius: 0.5em;
+}
+
+#tips article p {
+    background-color: #2A3027;
+    border-radius: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
 ul {
     display: flex;
     flex-flow: row wrap;
@@ -122,7 +140,7 @@ ul li {
 
 html::-webkit-scrollbar {
     width: auto;
-    background: white;
+    background: #E8B130;
 }
 
 html::-webkit-scrollbar-button {
@@ -130,7 +148,7 @@ html::-webkit-scrollbar-button {
 }
 
 html::-webkit-scrollbar-thumb {
-    background:#ffffff;
+    background:#E8B130;
 }
 
 html::-webkit-scrollbar-track {
