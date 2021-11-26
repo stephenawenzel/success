@@ -91,7 +91,8 @@ ul li:hover {
     }
 
     main {
-        height: 50%;
+        height: 45%;
+        border-top: solid 1px black;
     }
 }
 
@@ -101,13 +102,13 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-button {
-    background: #e1ede7;
+    display: none;
 }
 
 html::-webkit-scrollbar-thumb {
-    background:white;
+    background: #e1ede7;
 }
 
 html::-webkit-scrollbar-track {
-    background: #e1ede7;
+    background: white;
 }
