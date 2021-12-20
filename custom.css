@@ -15,6 +15,12 @@ body {
     font-family: 'Abel', sans-serif;
 }
 
+.heading {
+    font-weight: bold;
+    text-decoration: underline;
+    color: goldenrod;
+}
+
 li:hover {
     cursor: pointer;
 }
@@ -66,6 +72,22 @@ ul li {
 
 ul li:hover {
     background-color: #e1ede7;
+}
+
+#mcat li:hover {
+    background-color: #003d79;
+}
+
+#mcat li:hover a {
+    color: white;
+}
+
+#medical li:hover {
+    background-color: #003d79;
+}
+
+#medical li:hover a {
+    color: white;
 }
 
 @media only screen and (max-width: 768px) {
