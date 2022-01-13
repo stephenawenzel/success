@@ -4,7 +4,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-items: center;
-    align-content: center;
+    align-content: space-around;
     cursor:default;
     -webkit-user-select: none; /* Webkit */ 
     -moz-user-select: none; /* Firefox */
@@ -13,12 +13,20 @@ body {
     -o-user-select: none;
     user-select: none;
     font-family: 'Abel', sans-serif;
+    background-image: linear-gradient(to right, #0C1821, #324A5F);
+    color: #EEF0F2;
+}
+
+header {
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .heading {
     font-weight: bold;
-    text-decoration: underline;
-    color: goldenrod;
+    color: #F3F9D2;
 }
 
 li:hover {
@@ -26,22 +34,22 @@ li:hover {
 }
 
 a:link {
-    color: #081710;
+    color: #EEF0F2;
     text-decoration: none;
 }
 
 a:visited {
-    color: #081710;
+    color: #EEF0F2;
     text-decoration: none;
 }
 
 a:hover {
-    color: #081710;
+    color: #EEF0F2;
     cursor: pointer;
 }
 
 a:active {
-    color: #081710;
+    color: #EEF0F2;
     text-decoration: none;
 }
 
@@ -51,52 +59,32 @@ section {
     justify-content: center;
 }
 
+
 ul {
     display: flex;
     flex-flow: row wrap;
     justify-items: center;
-    align-items: space-around;
+    align-items: center;
+    border-left: solid 0.1em #EEF0F2;
 }
 
 ul li {
     color: #081710;
-    font-size: 0.9em;
-    font-weight:bold;
     list-style: none;
     border-radius: 0.5em;
-    display: flex;
+    display: flex; 
     flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 ul li:hover {
-    background-color: #e1ede7;
-}
-
-#mcat li:hover {
-    background-color: #003d79;
-}
-
-#mcat li:hover a {
-    color: white;
-}
-
-#medical li:hover {
-    background-color: #003d79;
-}
-
-#medical li:hover a {
-    color: white;
+    background-color: #324A5F;
 }
 
 @media only screen and (max-width: 768px) {
-    main {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        padding-top: 10vh;
-        padding-bottom: 10vh;
+    header {
+        padding: 3vh 0 3vh 0;
     }
 }
 
@@ -114,8 +102,13 @@ ul li:hover {
 
     main {
         height: 45%;
-        border-top: solid 1px black;
     }
+}
+
+@media only screen and (min-width: 967px){
+    body {
+        font-size: 1.2em;
+    }  
 }
 
 html::-webkit-scrollbar {
