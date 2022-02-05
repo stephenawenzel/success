@@ -1,11 +1,20 @@
 /* All your custom styles go here. You can override the default Bootstrap styles or add your own custom styles for elements, classes, or IDs.  */
+@media screen and (max-width: 767px) {
+    main {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    main {        
+        height: 100vh;
+    }
+}
 
 body {
-    display: flex;
-    flex-flow: row wrap;
-    justify-items: center;
-    align-content: space-around;
-    cursor:default;
+    cursor: default;
     -webkit-user-select: none; /* Webkit */ 
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE 10 */
@@ -13,107 +22,52 @@ body {
     -o-user-select: none;
     user-select: none;
     font-family: 'Abel', sans-serif;
-    background-image: linear-gradient(to right, #0C1821, #324A5F);
-    color: #EEF0F2;
+    background-color: #000;
+    color: #F1F2EB;
 }
 
-header {
-    display: flex; 
+main {    
+    display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-content: space-around;
 }
 
 .heading {
     font-weight: bold;
-    color: #F3F9D2;
-}
-
-li:hover {
-    cursor: pointer;
+    color: #73EB77;
 }
 
 a:link {
-    color: #EEF0F2;
+    color: #F1F2EB;
     text-decoration: none;
 }
 
 a:visited {
-    color: #EEF0F2;
+    color: #F1F2EB;
     text-decoration: none;
 }
 
 a:hover {
-    color: #EEF0F2;
+    color: #73EB77;
     cursor: pointer;
 }
 
 a:active {
-    color: #EEF0F2;
+    color: #F1F2EB;
     text-decoration: none;
 }
 
 section {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-}
-
-
-ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-items: center;
-    align-items: center;
-    border-left: solid 0.1em #EEF0F2;
-}
-
-ul li {
-    color: #081710;
-    list-style: none;
-    border-radius: 0.5em;
-    display: flex; 
-    flex-flow: row wrap;
     justify-content: flex-start;
-    align-items: center;
-}
-
-ul li:hover {
-    background-color: #324A5F;
-}
-
-@media only screen and (max-width: 768px) {
-    header {
-        padding: 3vh 0 3vh 0;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    main article {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        align-content: space-between;
-    }
-
-    body {
-        height: 100vh;
-    }
-
-    main {
-        height: 45%;
-    }
-}
-
-@media only screen and (min-width: 967px){
-    body {
-        font-size: 1.2em;
-    }  
+    align-items: space-around;
 }
 
 html::-webkit-scrollbar {
     width: auto;
-    background: white;
+    background: #000;
 }
 
 html::-webkit-scrollbar-button {
@@ -121,9 +75,10 @@ html::-webkit-scrollbar-button {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: #e1ede7;
+    background: #73EB77;
+    border-radius: 1.5em;
 }
 
 html::-webkit-scrollbar-track {
-    background: white;
+    background: #000000;
 }
