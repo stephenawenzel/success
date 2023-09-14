@@ -188,8 +188,13 @@ section {
 }
 
 ul {
-    list-style-type: upper-roman;
+    display: block;
+    list-style-type: decimal;
     text-align: justify;
+}
+
+li {
+    list-style-position: inside;
 }
 
 
