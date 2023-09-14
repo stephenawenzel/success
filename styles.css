@@ -155,6 +155,9 @@ section {
     align-items: space-around;
     background-color: hsla(255, 100%, 100%, 0.1);
     padding-bottom: 0.6em;
+    border-radius: 15px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 .heading {
@@ -182,6 +185,11 @@ section {
 
 .item a {
     font-size: 1.5em;
+}
+
+ul {
+    list-style-type: upper-roman;
+    text-align: justify;
 }
 
 
